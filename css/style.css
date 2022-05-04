@@ -91,3 +91,24 @@ body{
     display: none;
     transition: .2s ease-in-out;
 }
+
+
+
+
+
+
+
+/* media query */
+@media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 1.5rem 3%;
+    }
+}
+@media(max-width:768px){
+    #menu-bars{
+        display: initial;
+    }
+}
