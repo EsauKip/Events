@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --main-color:#ffc107;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:.2s ease-in-out;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 60px;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-track-piece{
+    background: #444;   
+}
+html::-webkit-scrollbar-thumb{
+background-color : var(--main-color);
+    border-radius: 5rem;
+}
+body{
+    background: #222;
+}
+.header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgb(23, 6, 73);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+     
+}
+.header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+.header .logo:hover{
+    color: var(--main-color);
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.header .logo span{
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    text-transform: none;
+    color: var(--main-color);
+}
+.header .navbar a{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+#menu-bars{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    transition: .2s ease-in-out;
+}
