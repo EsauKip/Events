@@ -36,6 +36,18 @@ body{
 section{
     padding: 2rem 9%;
 }
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.heading span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
 .btn{
     margin-top: 1rem;
     display: inline;
@@ -195,4 +207,34 @@ max-width: 70rem;
     .home .home-slider .swiper-slide{
         width:27rem;
     }
+}
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+.service .box-container .box{
+    border-radius: .5rem;
+    background: rgb(129, 124, 124);
+    text-align: center;
+}
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background:var(--main-color);
+    font-size: 2.5rem;
+    line-height: 6rem;
+    color: #fff;
+    text-align: center;
+}
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    line-height:1.8;
 }
